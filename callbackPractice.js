@@ -51,7 +51,9 @@ last(names, function(lastName){
 // 3. Write a function called multiply that multiplies two numbers using a callback function.
 
   //Code Here
-
+let multiply = function(numb1, numb2, multi) {
+  multi(numb1 * numb2)
+}
 
 multiply(4, 3, function(answer){
   console.log('The answer is ' + answer); //should console.log 12
