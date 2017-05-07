@@ -66,6 +66,18 @@ multiply(4, 3, function(answer){
 
   //Code Here 
 
+let contains = function(names, str, callback){
+  for (let i = 0; i < names.length; i++) {
+    if (names[i] === str) {
+      callback(true)
+    } 
+    else {
+      callback(false)
+    }
+  }
+}
+
+
 contains(names, 'Colt', function(result){
   if(result === true){
     console.log('Colt is in the array');
