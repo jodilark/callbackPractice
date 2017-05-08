@@ -108,6 +108,11 @@ uniq(names, function(uniqArr){
 // function to return the indices and item.
 
     //Code Here 
+let each = function(names, callback){
+  for (let i = 0; i < names.length; i++){
+    callback(names[i], i)
+  }
+}
 
 each(names, function(item, indice){
   console.log('The item in the ' + indice + ' position is ' + item)
