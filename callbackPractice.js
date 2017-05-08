@@ -93,6 +93,12 @@ contains(names, 'Colt', function(result){
 
     //Code Here
 
+let uniq = function(names, callback) {
+  callback(names.filter(function(elem, index, self) {
+    return index == self.indexOf(elem)
+}))
+}
+
 uniq(names, function(uniqArr){
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
 });
