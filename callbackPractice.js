@@ -124,6 +124,14 @@ each(names, function(item, indice){
 // and returns that user.
 
  //Code Here
+ let getUserById = function(users, value, callback){
+    for (let i = 0; i < users.length; i++){
+      if (users[i].id === value) {
+        callback(users[i])
+      }
+    }
+  
+}
 
 var users = [
   {
